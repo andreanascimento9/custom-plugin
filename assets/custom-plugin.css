@@ -1,0 +1,71 @@
+.kai-tabs {
+	font-family: 'DM Sans';
+	width: 100%;
+	margin: 0 auto;
+}
+
+.kai-tab-links {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-left: 0;
+	padding: 10px 20px 5px 20px;
+	border-radius: 10px;
+	background: #FFF;
+	box-shadow: 0px 10px 32px 0px rgba(149, 123, 165, 0.15);
+	justify-content: space-between;
+}
+
+.kai-tabs-scroll{
+	display: flex;
+	gap: 7px;
+	overflow-y: scroll;
+	white-space: nowrap;
+	align-items: center;
+	height: 75px;
+	padding-left: 0;
+	position: relative; 
+  transition: left 0.3s ease; 
+}
+
+.kai-tabs-scroll::-webkit-scrollbar {
+  display: none;
+}
+.kai-tabs-to-left img,
+.kai-tabs-to-right img{
+	min-width: 32px;
+	position: relative;
+	top: 3px;
+	cursor: pointer;
+}
+.kai-tabs-to-right img {
+	transform: rotate(180deg);
+}
+
+.kai-tab-links li {
+	list-style: none;
+}
+
+.kai-tab-links a {
+	text-decoration: none;
+	padding: 15px 25px;
+	color: #8361988F;
+	border-radius: 100px;
+	font-size: 1.15em;
+	font-weight: bold;
+}
+
+.kai-tab-links .active a {
+	background: #957BA53D;
+	color: #836198;
+	font-weight: bold;
+}
+
+.kai-tab-content {
+	display: none;
+	padding: 40px 10px 20px 10px;
+}
+
+.kai-tab-content.active {
+	display: block;
+}
